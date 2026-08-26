@@ -212,19 +212,19 @@ class GitConfigInitializer:
         
         if self.system == PlatformType.WINDOWS:
             editors: list[tuple[str, str]] = [
-                ('code --wait', 'VS Code'),
+                ('code', 'VS Code'),
                 ('notepad', '记事本'),
                 ('vim', 'Vim')
             ]
         elif self.system == PlatformType.MACOS:  # macOS
             editors: list[tuple[str, str]] = [
-                ('code --wait', 'VS Code'),
+                ('code', 'VS Code'),
                 ('vim', 'Vim'),
                 ('nano', 'Nano')
             ]
         else:  # Linux
             editors: list[tuple[str, str]] = [
-                ('code --wait', 'VS Code'),
+                ('code', 'VS Code'),
                 ('vim', 'Vim'),
                 ('nano', 'Nano'),
                 ('emacs', 'Emacs')
